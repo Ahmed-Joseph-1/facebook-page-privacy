@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Auto-Publisher App</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1, h2 {
+            color: #1877f2; /* Facebook Blue for a professional look */
+        }
+        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .contact-info { background: #f9f9f9; padding: 15px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1>Privacy Policy</h1>
+    <p><strong>Last Updated:</strong> October 24, 2026</p>
+
+    <h2>1. Introduction</h2>
+    <p>This privacy policy applies to the custom Chrome Extension and its associated Meta App integration (collectively, "the App"). The App is designed strictly as an internal, personal-use automation tool for the developer to publish product offers directly to their own managed Facebook Page.</p>
+
+    <h2>2. Data Collection and Usage</h2>
+    <p>Because this is a private, client-side-only tool, the App <strong>does not</strong> collect, harvest, or store the personal data of public users. The data processed is limited strictly to the following:</p>
+    <ul>
+        <li><strong>Browser/DOM Data:</strong> The App reads specific e-commerce product pages to extract non-personal data (product titles, prices, and links) and captures a screenshot of the active browser viewport.</li>
+        <li><strong>Facebook API Data:</strong> The App utilizes a long-lived Facebook Page Access Token to authenticate with the Facebook Graph API. This token is used exclusively to publish photo and text posts to a Facebook Page authorized by the developer.</li>
+    </ul>
+
+    <h2>3. Data Storage</h2>
+    <p>The App does not use any external backend servers or remote databases. Your Facebook Page Access Token and any associated settings are stored locally within your browser using <code>chrome.storage.local</code>. No data is transmitted to third-party services outside of the direct, secure API calls made to Facebook's Graph API.</p>
+
+    <h2>4. Data Sharing and Disclosure</h2>
+    <p>We do not sell, trade, or otherwise transfer any information to outside parties. All data processing occurs locally on the user's device and communicates directly with Meta.</p>
+
+    <h2 id="data-deletion">5. User Data Deletion Instructions</h2>
+    <p>Even though this App is for internal use and does not store user data on external servers, you have full control over removing it. To delete your data and revoke access:</p>
+    <ol>
+        <li><strong>Remove Local Data:</strong> Navigate to your browser's extension management page (e.g., <code>chrome://extensions/</code>), locate the App, and click <strong>"Remove"</strong>. This will permanently delete your stored API tokens and settings from <code>chrome.storage.local</code>.</li>
+        <li><strong>Revoke Facebook Access:</strong> Go to your Facebook account settings. Navigate to <strong>Settings & Privacy &gt; Settings &gt; Security and Login &gt; Business Integrations</strong> (or Apps and Websites). Locate this App in the list, click <strong>"Remove"</strong>, and confirm. This will sever the connection between the App and your Facebook Page.</li>
+    </ol>
+
+    <h2>6. Contact Information</h2>
+    <p>If you have any questions or concerns regarding this Privacy Policy or the data practices of the App, please contact the developer at:</p>
+    <div class="contact-info">
+        <p><strong>Email:</strong> ahmedjoseph0000@gmail.com</p>
+    </div>
+
+</body>
+</html>
